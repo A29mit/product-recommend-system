@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Tracking</title>
+</head>
+<body>
+    <h1>User Activity Tracking</h1>
+
+    <p>Welcome to this website.</p>
+
+    <a href="https://tropicaloak.com/">Visit another page</a>
+
+    <form action="." method="post">
+        {% csrf_token %}
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
